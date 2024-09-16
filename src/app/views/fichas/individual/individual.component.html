@@ -1,0 +1,26 @@
+<c-card class="my-4">
+    <c-card-body class="p-4">
+        <c-row>
+            <c-col sm="12">
+                <h3 class="card-title mb-0">Ficha Individual</h3>
+                <h4 class="card-title mb-0">Datos Generales</h4>
+            </c-col>
+        </c-row>
+        <form [formGroup]="fichaForm" (ngSubmit)="onSubmit()">
+
+            <c-row class="form-group">
+
+                <c-col sm="12" md="4">
+                    <div class="d-flex flex-column gap-2">
+                        <label for="numeficha d-flex">
+                            <div class="divcuadrorequired">2</div>Numero de ficha
+                        </label>
+                        <input pInputText id="numeficha" formControlName="numeficha" />
+                    </div>
+                </c-col>
+                <c-col sm="12" md="4">2 of 3 (wider)</c-col>
+                <c-col sm="12" md="4">3 of 3</c-col>
+            </c-row>
+        </form>
+    </c-card-body>
+</c-card>
